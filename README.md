@@ -1,2 +1,2 @@
 # dotfiles
-Personal configuration files, managed with Mackup.
+Personal configuration files, managed by [Mackup](https://github.com/lra/mackup).
