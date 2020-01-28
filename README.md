@@ -1,5 +1,5 @@
 # dotfiles
-Personal dotfiles, managed by [Mackup](https://github.com/lra/mackup).
+Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 
 ## To Restore
 
