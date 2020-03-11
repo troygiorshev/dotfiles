@@ -10,9 +10,9 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 * Reboot
 * At zsh's first time startup (newuser-install), choose option 0
 * Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
-* Install oh-my-zsh packages
+* Install oh-my-zsh packages, and others
   * `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
-  * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+  * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.terminal/zsh-syntax-highlighting`
 * Install [Pure](https://github.com/sindresorhus/pure)
 * Setup Python
   * Download [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
