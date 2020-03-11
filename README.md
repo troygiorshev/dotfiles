@@ -8,7 +8,7 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 * Install zsh
 * `chsh -s $(which zsh)`
 * reboot
-* Go through newuser-install
+* At newuser-install, choose option 0
 
 ### Mackup
 
