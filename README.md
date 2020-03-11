@@ -3,6 +3,12 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 
 ## To Restore
 
+### Preliminaries
+
+* Install zsh
+
+### Mackup
+
 * Clone this repo into ~/dotfiles
 * Install Mackup
 * `ln -s ~/dotfiles/.mackup.cfg ~/.mackup.cfg`
