@@ -19,8 +19,8 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
   * `zsh Miniconda3-latest-Linux-x86_64.sh`
   * folder: .anaconda3 not miniconda3
 * Setup Screenfetch
-  * git clone https://github.com/troygiorshev/screenFetch.git ~/.zsh/screenFetch
-  * sudo ln -s ~/.zsh/screenFetch/screenfetch /usr/bin 
+  * `git clone https://github.com/troygiorshev/screenFetch.git ~/.zsh/screenFetch`
+  * `sudo ln -s ~/.zsh/screenFetch/screenfetch-dev /usr/bin/screenfetch`
 
 ### Mackup
 
