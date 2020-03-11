@@ -28,7 +28,3 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 * `ln -s ~/dotfiles/.mackup.cfg ~/.mackup.cfg`
 * `mackup restore`
   * Yes to all
-
-## Possible Issues
-
-* Oh-my-zsh's "zsh completions" plugin might need to be fixed after a restore.
