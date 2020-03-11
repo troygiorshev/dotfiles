@@ -146,6 +146,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Troy - Prompt stuff
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 PURE_GIT_DOWN_ARROW=⇣
 PURE_GIT_UP_ARROW=⇡
