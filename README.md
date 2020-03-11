@@ -10,6 +10,8 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 * Reboot
 * At zsh's first time startup (newuser-install), choose option 0
 * Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+* Install oh-my-zsh packages
+  * `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
 * Install [Pure](https://github.com/sindresorhus/pure)
 * Setup Python
   * Download [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
