@@ -22,7 +22,7 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 * `pip install --upgrade mackup`
 * `ln -s ~/dotfiles/.mackup.cfg ~/.mackup.cfg`
 * `mackup restore`
-  * Yes, replace the .mackup.cfg
+  * Yes to all
 
 ## Possible Issues
 
