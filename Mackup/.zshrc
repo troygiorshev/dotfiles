@@ -1,6 +1,37 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Troy - Figure out what OS we're on
+if [ -f /etc/os-release ]; then
+    # freedesktop.org and systemd
+    . /etc/os-release
+    OS=$NAME
+    VER=$VERSION_ID
+elif type lsb_release >/dev/null 2>&1; then
+    # linuxbase.org
+    OS=$(lsb_release -si)
+    VER=$(lsb_release -sr)
+elif [ -f /etc/lsb-release ]; then
+    # For some versions of Debian/Ubuntu without lsb_release command
+    . /etc/lsb-release
+    OS=$DISTRIB_ID
+    VER=$DISTRIB_RELEASE
+elif [ -f /etc/debian_version ]; then
+    # Older Debian/Ubuntu/etc.
+    OS=Debian
+    VER=$(cat /etc/debian_version)
+elif [ -f /etc/SuSe-release ]; then
+    # Older SuSE/etc.
+    ...
+elif [ -f /etc/redhat-release ]; then
+    # Older Red Hat, CentOS, etc.
+    ...
+else
+    # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
+    OS=$(uname -s)
+    VER=$(uname -r)
+fi
+
 # Troy - Make a good baseline for $PATH
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
@@ -152,7 +183,10 @@ PURE_GIT_DOWN_ARROW=⇣
 PURE_GIT_UP_ARROW=⇡
 prompt pure
 
-source /home/troy/.terminal/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/troy/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-screenfetch -d -disk
-
+if [ "$OS"="CentOS Linux" ]; then
+    screenfetch -d '-gpu'
+else
+    screenfetch -d '-disk'
+fi
