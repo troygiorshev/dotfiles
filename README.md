@@ -17,7 +17,7 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 * Setup Python
   * Download [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
   * `zsh Miniconda3-latest-Linux-x86_64.sh`
-  * use .miniconda3 not miniconda3
+  * folder: .anaconda3 not miniconda3
 
 ### Mackup
 
