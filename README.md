@@ -7,8 +7,10 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 
 * Install zsh
 * `chsh -s $(which zsh)`
-* reboot
-* At newuser-install, choose option 0
+* Reboot
+* At zsh's first time startup (newuser-install), choose option 0
+* Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+* Install [Pure](https://github.com/sindresorhus/pure)
 
 ### Mackup
 
