@@ -6,6 +6,7 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 ### Preliminaries
 
 * Install zsh
+* `chsh -s $(which zsh)`
 
 ### Mackup
 
