@@ -12,12 +12,14 @@ Personal dotfiles, courtesy of [Mackup](https://github.com/lra/mackup).
 * Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 * Install oh-my-zsh packages, and others
   * `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
-  * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.terminal/zsh-syntax-highlighting`
+  * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting`
 * Install [Pure](https://github.com/sindresorhus/pure)
 * Setup Python
   * Download [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
   * `zsh Miniconda3-latest-Linux-x86_64.sh`
   * folder: .anaconda3 not miniconda3
+* Setup Screenfetch
+  * git clone https://github.com/troygiorshev/screenFetch.git 
 
 ### Mackup
 
