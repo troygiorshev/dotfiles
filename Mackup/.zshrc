@@ -185,7 +185,7 @@ prompt pure
 
 source /home/troy/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-if [ "$OS"="CentOS Linux" ]; then
+if [ "$OS" = "CentOS Linux" ]; then
     screenfetch -d '-gpu;-wmtheme'
 else
     screenfetch -d '-disk'
