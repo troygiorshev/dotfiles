@@ -1,5 +1,6 @@
 # dotfiles
-Personal dotfile backup, courtesy of [Mackup](https://github.com/lra/mackup).
+Personal dotfile backup, courtesy of [Mackup](https://github.com/lra/mackup).  
+TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 
 ## To Restore
 
