@@ -22,6 +22,13 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 * Setup Screenfetch
   * `git clone https://github.com/troygiorshev/screenFetch.git ~/.zsh/screenFetch`
   * `sudo ln -s ~/.zsh/screenFetch/screenfetch-dev /usr/bin/screenfetch`
+* Fix irssi
+  * In `.irssi/config` replace Freenode `sasl_password`
+* Setup git's `diff-highlight`
+  * `git clone https://github.com/git/git.git ~/.zsh/git`
+  * `cd ~/.zsh/git/contrib/diff-highlight`
+  * `make`
+  * `sudo ln -s ~/.zsh/git/contrib/diff-highlight/diff-highlight /usr/bin/diff-highlight`
 
 ### Mackup
 
@@ -30,3 +37,9 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 * `ln -s ~/dotfiles/.mackup.cfg ~/.mackup.cfg`
 * `mackup restore`
   * Yes to all
+
+## To Backup
+
+* `mackup backup`
+* `.irssi/config`
+  * Redact Freenode `sasl_password`
