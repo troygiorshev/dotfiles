@@ -28,8 +28,7 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
   * In `.irssi/config` replace Freenode `sasl_password`
 * Setup git's `diff-highlight`
   * `git clone https://github.com/git/git.git ~/.zsh/git`
-  * `cd ~/.zsh/git/contrib/diff-highlight`
-  * `make`
+  * `make -C ~/.zsh/git/contrib/diff-highlight`
   * `sudo ln -s ~/.zsh/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight`
 
 ### Mackup
