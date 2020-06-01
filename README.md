@@ -6,6 +6,7 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 
 ### Preliminaries
 
+* `sudo mkdir /usr/local/bin`
 * Install zsh
 * `chsh -s $(which zsh)`
 * Reboot
