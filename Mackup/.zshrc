@@ -32,6 +32,19 @@ else
     VER=$(uname -r)
 fi
 
+# Also check if we're on WSL (Taken from Screenfetch)
+if grep -q -i 'Microsoft' /proc/version 2>/dev/null || \
+	grep -q -i 'Microsoft' /proc/sys/kernel/osrelease 2>/dev/null
+then
+	is_wsl=true
+fi
+
+# Troy - If on WSL, start cron
+if [ "$is_wsl" = true ]; then
+	[ -z "$(ps -ef | grep cron | grep -v grep)" ] \
+		&& sudo /etc/init.d/cron start &> /dev/null
+fi
+
 # Troy - Make a good baseline for $PATH
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
