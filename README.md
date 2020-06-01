@@ -33,7 +33,7 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 
 ### Mackup
 
-* `git clone https://github.com/troygiorshev/dotfiles.git ~`
+* `git clone https://github.com/troygiorshev/dotfiles.git ~/dotfiles`
 * `pip install --upgrade mackup`
 * `ln -s ~/dotfiles/.mackup.cfg ~/.mackup.cfg`
 * `mackup restore`
