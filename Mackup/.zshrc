@@ -39,14 +39,17 @@ then
 	is_wsl=true
 fi
 
-# Troy - If on WSL, start cron
+# Troy - If on WSL, start cron, and fix graphics
 if [ "$is_wsl" = true ]; then
 	[ -z "$(ps -ef | grep cron | grep -v grep)" ] \
 		&& sudo /etc/init.d/cron start &> /dev/null
+	export DISPLAY=$(awk '/nameserver / {print $2; exit}' \
+		/etc/resolv.conf 2>/dev/null):0
+	export LIBGL_ALWAYS_INDIRECT=1
 fi
 
 # Troy - Make a good baseline for $PATH
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/System32
 
 # Path to your oh-my-zsh installation.
 export ZSH="~/.oh-my-zsh"
@@ -189,6 +192,10 @@ export NVM_DIR="$HOME/.nvm"
 # Troy - Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Troy - Ruby
+export GEM_HOME="$HOME/.gems"
+export PATH="$HOME/.gems/bin:$PATH"
+
 # Troy - Prompt stuff
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
@@ -201,5 +208,5 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 if [ "$OS" = "CentOS Linux" ]; then
     screenfetch -d '-gpu;-wmtheme'
 else
-    screenfetch -d '-disk'
+    screenfetch -d '-disk;-res;-gtk;-wm;-wmtheme'
 fi

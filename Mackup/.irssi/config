@@ -15,7 +15,7 @@ chatnets = {
   Freenode = {
     type = "IRC";
     nick = "troygiorshev";
-    autosendcmd = "/mode troygiorshev +gw";
+    autosendcmd = "/mode troygiorshev +w";
     max_kicks = "1";
     max_msgs = "4";
     max_whois = "1";
@@ -202,8 +202,22 @@ settings = {
     real_name = "Troy Giorshev";
     user_name = "troygiorshev";
     nick = "troygiorshev";
+    awaylog_file = "~/.irclogs/away.log";
+    awaylog_level = "all -crap -clientcrap -ctcps";
   };
   "fe-text" = { actlist_sort = "refnum"; };
-  "perl/core/scripts" = { neat_maxlength = "13"; };
+  "perl/core/scripts" = {
+    neat_maxlength = "13";
+    neat_global_colors = "yes";
+    neat_color_reassign_time = "2day";
+  };
+  "fe-common/core" = {
+    autolog = "yes";
+    autolog_path = "~/.irclogs/%Y/$tag/$0.%m-%d.log";
+    activity_hide_targets = "#bitcoin";
+    autolog_ignore_targets = "";
+    theme = "BitchX.theme";
+  };
 };
 ignores = ( { level = "JOINS PARTS QUITS NICKS"; } );
+logs = { };
