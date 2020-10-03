@@ -46,3 +46,4 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 * `mackup backup`
 * `.irssi/config`
   * Redact Freenode `sasl_password`
+* `git` stuff
