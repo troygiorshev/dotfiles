@@ -13,6 +13,7 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 * At zsh's first time startup (newuser-install), choose option 0
 * Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
   * `zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+  * `sudo chmod 744 .oh-my-zsh/oh-my-zsh.sh`
 * Install oh-my-zsh packages, and others
   * `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
   * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting`
