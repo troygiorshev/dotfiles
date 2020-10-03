@@ -25,12 +25,13 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 * Setup Screenfetch
   * `git clone https://github.com/troygiorshev/screenFetch.git ~/.zsh/screenFetch`
   * `sudo ln -s ~/.zsh/screenFetch/screenfetch-dev /usr/local/bin/screenfetch`
-* Fix irssi
-  * In `.irssi/config` replace Freenode `sasl_password`
 * Setup git's `diff-highlight`
   * `git clone https://github.com/git/git.git ~/.zsh/git`
   * `make -C ~/.zsh/git/contrib/diff-highlight`
   * `sudo ln -s ~/.zsh/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight`
+* Mackup Restore (below)
+* Fix irssi
+  * In `.irssi/config` replace Freenode `sasl_password`
 
 ### Mackup
 
