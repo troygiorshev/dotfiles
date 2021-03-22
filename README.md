@@ -23,6 +23,8 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
   * Download [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
   * `zsh Miniconda3-latest-Linux-x86_64.sh`
   * folder: .anaconda3 not miniconda3
+  * init: yes
+  * clone base into main as usual
 * Setup Screenfetch
   * `git clone https://github.com/troygiorshev/screenFetch.git ~/.zsh/screenFetch`
   * `sudo ln -s ~/.zsh/screenFetch/screenfetch-dev /usr/local/bin/screenfetch`
