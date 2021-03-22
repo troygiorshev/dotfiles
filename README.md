@@ -28,6 +28,8 @@ TODO: Consider upgrading to [rcm](https://github.com/thoughtbot/rcm)
 * Setup Screenfetch
   * `git clone https://github.com/troygiorshev/screenFetch.git ~/.zsh/screenFetch`
   * `sudo ln -s ~/.zsh/screenFetch/screenfetch-dev /usr/local/bin/screenfetch`
+  * **Note:** This will hang until X11 is set up
+    * <https://github.com/WhitewaterFoundry/Pengwin/issues/231>
 * Setup git's `diff-highlight`
   * `git clone https://github.com/git/git.git ~/.zsh/git`
   * `make -C ~/.zsh/git/contrib/diff-highlight`
